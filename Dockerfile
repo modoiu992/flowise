@@ -1,4 +1,5 @@
-FROM n8nio/n8n
+FROM flowiseai/flowise
 
-ENV N8N_PORT=${PORT}
-EXPOSE 5678
+EXPOSE 3000
+
+CMD ["npx", "flowise", "start"]
